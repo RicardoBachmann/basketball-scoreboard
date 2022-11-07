@@ -1,6 +1,89 @@
+:root {
+    --background: rgb(211,211,211);
+    --primary: rgb(255, 0, 0);
+}
+
 * {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: 'Familjen Grotesk', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+
+}
+
+
+h1 {
+    font-size: 2rem;
+    font-style: italic;
+    text-align: center;     
+}
+
+h2 {
+    font-size: 7rem;
+    text-align: center;
+}
+
+
+.home, 
+.guest {
+    padding: 2rem;
+
+} 
+
+.scoreboard-home,
+.scoreboard-guest {
+    background-color: var(--background);
+    border-radius: 10px;
+    padding: 1rem;   
+
+}
+
+img {
+    height: 20vh;
+
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+    margin-top: 1rem;   
+}
+
+.plusOne-btn,
+.plusTwo-btn,
+.plusThree-btn,
+.reset-btn {
+  border: 0;
+  padding: 0.5625em;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  border-radius: 5px;
+  font-size: 0.9rem;
+
+}
+
+.reset-btn{
+    letter-spacing: 0.125em;
+
+}
+
+.buttons > button:active {
+    transform: scale(0.96);
 
 }
